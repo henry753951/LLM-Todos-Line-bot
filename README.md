@@ -1,17 +1,17 @@
 # line-bot-python-example
 
-## About The Project
+## 關於本專案
 
-Here are some examples of line bot.
+這裡有幾個使用 line-bot-sdk-python 開發的範例機器人。
 
-## Usage for Vercel
+## 在 Vercel 上部署
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fgdscnuk%2Fline-bot-python-2023%2Ftree%2Fvercel&env=access_token,channel_secret,google_generativeai_token)
+[![使用 Vercel 部署]()](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhenry753951%2FLLM-Todos-Line-bot%2Ftree%2Fvercel&env=access_token,channel_secret)
 
+## 在本地端使用
 
-## Usage for local
+### Python 套件需求
 
-### Requirements
 ```md
 - Python >= 3.8
 - Flask==3.0.0
@@ -19,30 +19,31 @@ Here are some examples of line bot.
 - python-dotenv==1.0.0
 - google-generativeai==0.3.1
 ```
-### Installation
 
-1. Install requirements
+### 安裝
+
+1. 安裝所需套件
 
 ```sh
 pip install -r requirements.txt
 ```
 
-2. Copy `.env.example` and rename to `.env`
-3. Change the content in `.env` to your own information
-4. Run the program
+2. 複製 .env.example 並重新命名為 .env
+3. 修改 .env 中的內容為你申請到的資訊
+4. 執行程式
 
 ```sh
 python index.py
 ```
 
-### Webhook URL route
-| Route | Description |
-| --- | --- |
-| `/echo/` | Echo bot |
-| `/chat/` | Generative AI bot |
-| `/keyword/` | Keyword bot |
+### Webhook URL 路由
 
+| 路由        | 說明             |
+| ----------- | ---------------- |
+| `/echo/`    | Echo 機器人      |
+| `/chat/`    | 生成式 AI 機器人 |
+| `/keyword/` | 關鍵字機器人     |
 
-## License
+## 授權
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
